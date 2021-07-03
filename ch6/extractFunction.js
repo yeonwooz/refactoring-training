@@ -2,7 +2,6 @@ function printOwing(invoice) {
     let outStanding = 0
 
     printBanner()
-    
 
     // calcutate the dept of customer
     for (const o of invoice.orders) {
