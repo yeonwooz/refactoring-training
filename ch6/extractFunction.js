@@ -11,9 +11,9 @@ function printOwing(invoice) {
     const today = Clock.today   // Date.now()
     invoice.dueDate =  new Date(today.getFullYear(), today.getMonth(), today.getDate() + 30)
 
-    printDetails()
+    printDetails(invoice, outStanding)
 
-    function printDetails() {
+    function printDetails(invoice, outStanding) {
         console.log(`name ${invoice.customer}`)
         console.log(`amount of dept ${outStanding}`)
         console.log(`due date ${invoice.dueDate.toLocalDateString()}`)
